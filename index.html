@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEO Analyzer Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main>
+        <div class="url-analyzer-box">
+            <h1>SEO Analyzer Pro 🚀</h1>
+            <p>Analyze a <strong>live, published URL</strong> for in-depth Google metrics.</p>
+            <label for="page-url">Enter Public URL</label>
+            <input type="text" id="page-url" placeholder="https.://www.yourwebsite.com/article">
+            <button id="analyze-url-button">Run Google Audit</button>
+            <div id="loading-spinner" class="hidden"></div>
+            <h2>Google Lighthouse Score</h2>
+            <div id="url-results-list">
+                </div>
+        </div>
+
+        <div class="draft-analyzer-box">
+            <h2>Or, Analyze Your Draft</h2>
+            <p>Paste your details and HTML to check content *before* you publish.</p>
+            
+            <label for="page-title">Page Title (H1)</label>
+            <input type="text" id="page-title" placeholder="e.g., The Ultimate Guide to Marketing">
+            
+            <label for="focus-keyword">Focus Keyword</label>
+            <input type="text" id="focus-keyword" placeholder="e.g., 'best marketing tips'">
+
+            <label for="meta-description">Meta Description</label>
+            <input type="text" id="meta-description" placeholder="Enter your meta description...">
+            <small id="meta-counter">0 / 160</small>
+            
+            <label for="main-content">Your Content (Paste HTML Source)</label>
+            <textarea id="main-content" rows="15" placeholder="Paste your article's HTML source code here..."></textarea>
+            <small id="content-counter">0 words</small>
+
+            <button id="analyze-button">Analyze Draft</button>
+            <h2>Draft Analysis</h2>
+            <ul id="results-list"></ul>
+        </div>
+    </main>
+
+</body>
+</html>
