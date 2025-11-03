@@ -279,15 +279,6 @@ const apiUrl = `https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=$
             addUrlRecommendation(`Network Error: ${error.message}`, 'bad');
         });
 });
-
-/**
- * This function processes the massive JSON from Google
- * and pulls out the interesting bits.
- */
-/**
- * This function processes the massive JSON from Google
- * and pulls out the interesting bits, including CWV and Performance.
- */
 /**
  * This function processes the massive JSON from Google
  * and pulls out the interesting bits, including CWV and Performance.
@@ -409,4 +400,5 @@ function addScoreCard(title, score) {
         <div class="score-value" style="color: ${scoreColor};">${score.toFixed(0)}</div>
     `;
     urlResultsList.appendChild(card);
+
 }
